@@ -95,7 +95,7 @@ const Contact = () => {
           </div>
 
           {/* Sales Value Proposition */}
-          <div className="animate-slide-up delay-200">
+          <div className="animate-slide-up rounded-lg ransition-elegant hover:bg-primary-foreground/10 duration-200">
             <Card className="bg-primary-foreground/10 border-primary-foreground/20">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-executive mb-6 text-center">Why Choose Me for Sales?</h3>

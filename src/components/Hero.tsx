@@ -56,7 +56,7 @@ const Hero = () => {
         </div>
 
         {/* Hero Image */}
-        <div className="animate-slide-up">
+        <div className="animate-slide-up hover:shadow-2xl duration-500 shadow-black rounded-md">
           <Card className="overflow-hidden shadow-lg border-0">
             <img 
               src={heroImage} 
