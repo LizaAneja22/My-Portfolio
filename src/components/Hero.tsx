@@ -40,7 +40,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="/Resume.pdf" download>
+            <a href="/Liza_Resume.pdf" download>
             <Button size="lg" className="transition-elegant hover:bg-stone-100 hover:text-black duration-300 border hover:shadow-xl">
               <File className="h-4 w-4 mr-2" />
               Download CV
