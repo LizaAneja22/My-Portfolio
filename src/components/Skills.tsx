@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import sales from "@/assets/sales.jpg";
+import sales from "@/assets/dashboard.jpg";
 import { BarChart3, Users, MessageSquare, Target } from "lucide-react";
 
 const Skills = () => {
