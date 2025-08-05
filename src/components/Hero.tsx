@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import heroImage from "@/assets/hero-sales-workspace.jpg";
-import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import heroImage from "@/assets/myself.jpg";
+import { Mail, Phone, MapPin, Linkedin, File } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
         {/* Content */}
         <div className="space-y-8 animate-fade-in">
           <div className="space-y-4">
-            <h1 className="text-5xl lg:text-6xl font-executive text-primary leading-tight">
+            <h1 className="text-7xl tracking-tight font-extrabold text-primary leading-tight">
               LIZA ANEJA
             </h1>
             <h2 className="text-2xl lg:text-3xl font-professional text-muted-foreground">
@@ -40,14 +40,18 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="transition-elegant">
-              <Mail className="h-4 w-4 mr-2" />
-              Contact Me
+            <a href="/Resume.pdf" download>
+            <Button size="lg" className="transition-elegant hover:bg-stone-100 hover:text-black duration-300 border hover:shadow-xl">
+              <File className="h-4 w-4 mr-2" />
+              Download CV
             </Button>
-            <Button variant="outline" size="lg" className="transition-elegant">
+            </a>
+            <a href="https://www.linkedin.com/in/liza-aneja-483044231/" target="blank">
+            <Button variant="outline" size="lg" className="transition-elegant hover:bg-stone-800 hover:text-white duration-300 hover:shadow-xl">
               <Linkedin className="h-4 w-4 mr-2" />
               LinkedIn Profile
             </Button>
+            </a>
           </div>
         </div>
 
@@ -57,7 +61,7 @@ const Hero = () => {
             <img 
               src={heroImage} 
               alt="Professional Sales Workspace" 
-              className="w-full h-[500px] object-cover"
+              className="w-full h-[500px] object-cover object-bottom"
             />
           </Card>
         </div>

@@ -43,7 +43,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-primary text-primary-foreground">
+    <section className="py-20 px-4 bg-primary text-primary-foreground text-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-executive mb-4">Let's Drive Sales Success Together</h2>

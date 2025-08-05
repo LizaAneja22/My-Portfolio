@@ -1,17 +1,18 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import clientMeeting from "@/assets/client-meeting.jpg";
-import crmInterface from "@/assets/crm-interface.jpg";
+import Valmara from "@/assets/Valmara.jpg";
+import Redbull from "@/assets/Redbull.jpg";
 import { Calendar, ExternalLink, TrendingUp, Users } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
     {
-      company: "Refund My Tax Now",
-      location: "Blacktown NSW, Australia",
+      company: "Valmara Globals",
+      location: "Remote",
+      weblink: "https://www.valmaraglobal.com/",
       position: "Remote Sales Support Intern",
       period: "JUN/25 - Current",
-      image: clientMeeting,
+      image: Valmara,
       achievements: [
         "Interacted with 50+ International Clients weekly, Resolving Queries and Assisting with service enrollment",
         "Scheduled appointments and consistently followed up, helping reduce missed consultations by 30%",
@@ -23,8 +24,10 @@ const Experience = () => {
     {
       company: "Red Bull Off-Premise Sales Virtual Experience Program (Forage)",
       position: "Program Participant",
+      weblink: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/P2whMfgG9v48cqWwx/s6RNpxzBkpREvE4xk_P2whMfgG9v48cqWwx_oAf2FYgT9a8KKGLAy_1754390372285_completion_certificate.pdf",
+      location: "Virtual",
       period: "Completed Aug 2025",
-      image: crmInterface,
+      image: Redbull,
       achievements: [
         "Analyzed real-world sales data from a key Red Bull retail chain to identify opportunities for revenue and margin growth",
         "Delivered actionable insights and strategic recommendations to increase product sales in off-premise environments",
@@ -60,7 +63,7 @@ const Experience = () => {
                     </CardTitle>
                     <div className="flex items-center gap-2 text-muted-foreground">
                       <h3 className="font-professional text-lg">{exp.company}</h3>
-                      {exp.location && <ExternalLink className="h-4 w-4" />}
+                      {exp.location && <a href={exp.weblink} target="blank"><ExternalLink className="h-4 w-4" /></a> }
                     </div>
                     {exp.location && (
                       <p className="font-professional text-sm text-muted-foreground">
@@ -92,7 +95,7 @@ const Experience = () => {
                   <img 
                     src={exp.image} 
                     alt={`${exp.company} work environment`}
-                    className="w-full h-full object-cover min-h-[400px]"
+                    className="w-full h-full object-cover max-h-[400px] mt-16"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent"></div>
                 </div>

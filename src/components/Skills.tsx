@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import salesAnalytics from "@/assets/sales-analytics.jpg";
+import sales from "@/assets/sales.jpg";
 import { BarChart3, Users, MessageSquare, Target } from "lucide-react";
 
 const Skills = () => {
@@ -80,7 +80,7 @@ const Skills = () => {
           <div className="animate-slide-up delay-200">
             <Card className="overflow-hidden shadow-lg border-0">
               <img 
-                src={salesAnalytics} 
+                src={sales} 
                 alt="Sales Analytics Dashboard" 
                 className="w-full h-[400px] object-cover"
               />

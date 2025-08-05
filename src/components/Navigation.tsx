@@ -41,7 +41,7 @@ const Navigation = () => {
           </div>
 
           <Button 
-            className="transition-elegant"
+            className="transition-elegant hover:bg-stone-100 hover:text-black duration-300 border hover:shadow-xl"
             onClick={() => scrollToSection('contact')}
           >
             Hire Me

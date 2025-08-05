@@ -16,20 +16,24 @@ const Education = () => {
   };
 
   const certifications = [
+    
     {
-      title: "Fundamentals of Sales Management",
-      provider: "Alison",
-      hasLink: true
+      title: "Sales and CRM Overview",
+      provider: "Professional Certification",
+      hasLink: true,
+      link: "https://coursera.org/verify/Q2V5ZTZUR405"
     },
     {
       title: "Microsoft 365 Fundamentals",
       provider: "Microsoft",
-      hasLink: true
+      hasLink: true,
+      link: "https://coursera.org/verify/8BK12YFPXY6O"
     },
     {
-      title: "Sales and CRM Overview",
-      provider: "Professional Certification",
-      hasLink: true
+      title: "Fundamentals of Sales Management",
+      provider: "Alison",
+      hasLink: true,
+      link: "https://drive.google.com/file/d/1ZQ7pm9UwOoevaLLh9Go6Xokc4ZhkMgUl/view?usp=drive_link"
     }
   ];
 
@@ -95,7 +99,7 @@ const Education = () => {
                         <p className="font-professional text-muted-foreground">{cert.provider}</p>
                       </div>
                       {cert.hasLink && (
-                        <ExternalLink className="h-4 w-4 text-muted-foreground flex-shrink-0 mt-1" />
+                        <a href={cert.link} target="block"><ExternalLink className="h-4 w-4 text-muted-foreground flex-shrink-0 mt-1" /></a>
                       )}
                     </div>
                   </div>
